@@ -20,10 +20,10 @@
 
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#">История</a></li>
-              <li class="main-nav__item"><a href="#">Производство</a></li>
-              <li class="main-nav__item"><a href="#">Ассортимент</a></li>
-              <li class="main-nav__item"><a href="#">Где купить</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"><span data-hover="История">История</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"><span data-hover="Производство">Производство</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"><span data-hover="Ассортимент">Ассортимент</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"><span data-hover="Где купить">Где купить</span></a></li>
             </ul>
           </nav>
 
@@ -37,15 +37,15 @@
             <li class="promo-slider__item  promo-slider__item--active">
               <h3 class="promo-slider__title">Крафтовый квас всему голова!</h3>
             </li>
-            <!-- <li class="promo-slider__item">
-              <h3 class="promo-slider__item-title"></h3>
+            <li class="promo-slider__item">
+              <h3 class="promo-slider__title">Всему голова крафтовый квас!</h3>
             </li>
             <li class="promo-slider__item">
-              <h3 class="promo-slider__item-title"></h3>
-            </li> -->
+              <h3 class="promo-slider__title">Квас крафтовый голова всему!</h3>
+            </li>
           </ul>
           <div class="promo-slider__toggles">
-            <label class="promo-slider__toggle" for="promo-input-1">1</label>
+            <label class="promo-slider__toggle promo-slider__toggle--active" for="promo-input-1">1</label>
             <label class="promo-slider__toggle" for="promo-input-2">2</label>
             <label class="promo-slider__toggle" for="promo-input-3">3</label>
           </div>
@@ -61,11 +61,13 @@
           <div class="items-container">
 
             <div class="bottle-item  bottle-item--left">
-              <h3 class="bottle-item__title">Вахтёр</h3>
-              <div class="bottle-item__alc">Алк. &lt; 1%</div>
-              <div class="bottle-item__cal">Ккал: 35</div>
-              <div class="bottle-item__ingredients">Ржаной хлеб, Вода, Солод, Соль</div>
               <img class="bottle-item__img" src="img/bottle-left.jpg" width="319" height="459" alt="Вахтёр">
+              <div class="bottle-item__stats">
+                <div class="bottle-item__alc">Алк. &lt; 1%</div>
+                <div class="bottle-item__cal">Ккал: 35</div>
+                <div class="bottle-item__ingredients">Ржаной хлеб, Вода, Солод, Соль</div>
+              </div>
+              <h3 class="bottle-item__title">Вахтёр</h3>
               <p class="bottle-item__desc">Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений!</p>
               <div class="bottle-item__buttons">
                 <a class="bottle-item__btn-more  btn" href="#">Подробнее</a>
@@ -75,11 +77,13 @@
             </div>
 
             <div class="bottle-item bottle-item--right">
-              <h3 class="bottle-item__title">Романтик</h3>
-              <div class="bottle-item__alc">Алк. &lt; 0,5%</div>
-              <div class="bottle-item__cal">Ккал: 27</div>
-              <div class="ottle-item__ingredients">Ячменный хлеб, Вода, Солод, Апельсин</div>
               <img class="bottle-item__img" src="img/bottle-right.jpg" width="319" height="459" alt="Романтик">
+              <div class="bottle-item__stats">
+                <div class="bottle-item__alc">Алк. &lt; 0,5%</div>
+                <div class="bottle-item__cal">Ккал: 27</div>
+                <div class="bottle-item__ingredients">Ячменный хлеб, Вода, Солод, Апельсин</div>
+              </div>
+              <h3 class="bottle-item__title">Романтик</h3>
               <p class="bottle-item__desc">Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.</p>
               <div class="bottle-item__buttons">
                 <a class="bottle-item__btn-more  btn" href="#">Подробнее</a>
@@ -96,15 +100,15 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="features__list">
             <li class="features__item">
-              <h2 class="features__title">Варим сами</h2>
+              <h2 class="features__title features__title--cook">Варим сами</h2>
               <p class="features__desc">Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
             </li>
             <li class="features__item">
-              <h2 class="features__title">Своё, родное</h2>
+              <h2 class="features__title features__title--native">Своё, родное</h2>
               <p class="features__desc">Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
             </li>
             <li class="features__item">
-              <h2 class="features__title">Не экономим</h2>
+              <h2 class="features__title features__title--quality">Не экономим</h2>
               <p class="features__desc">Человек это то, что он ест и пьет. У нас только качественные ингредиенты.</p>
             </li>
           </ul>
@@ -117,17 +121,17 @@
               <h3 class="history__item-title">Происхождение кваса</h3>
               <i class="history__item-src">Источник: <a href="http://ru.wikipedia.org">ru.wikipedia.org</a></i>
             </dt>
-            <dd class="history__item-decs">
-              <img class="history__item-img" src="img/wiki-1.png" width="200" height="101" alt="Происхождение кваса">
+            <dd class="history__item-desc">
               <p class="history__item-text">Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет древнерусское происхождение. Помимо России квас готовят в Белоруссии, Сербии, Македонии, Словакии и многих других странах, но называется он везде одинаково — квас.</p>
+              <img class="history__item-img" src="img/wiki-1.png" width="200" height="101" alt="Происхождение кваса">
             </dd>
             <dt class="history__item">
               <h3 class="history__item-title">Классификация кваса</h3>
               <i class="history__item-src">Источник: <a href="http://ru.wikipedia.org">ru.wikipedia.org</a></i>
             </dt>
-            <dd class="history__item-decs">
-              <img class="history__item-img" src="img/wiki-2.png" width="200" height="101" alt="Классификация кваса">
+            <dd class="history__item-desc">
               <p class="history__item-text">По российскому ГОСТу для промышленного изготовления — это напиток с объёмной долей этилового спирта не более 1,2%, изготовленный в результате незавершённого спиртового и молочнокислого брожения сусла.</p>
+              <img class="history__item-img" src="img/wiki-2.png" width="200" height="101" alt="Классификация кваса">
             </dd>
           </dl>
         </section>
@@ -136,9 +140,9 @@
           <h2 class="press__title">Пресса о нас</h2>
           <blockquote class="press__review">
             <p class="press__text">Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!</p>
-            <cite class="press__name">Газета столичный Стольник</b>
+            <a href="#" class="press__button  btn">Читать далее</a>
+            <cite class="press__name">Газета столичный Стольник</cite>
           </blockquote>
-          <a href="#" class="press__button  btn">Читать далее</a>
         </section>
 
         <section class="products">
@@ -166,14 +170,14 @@
               <td>250 Р.</td>
             </tr>
             <tr>
-              <td class="products__name products__name--new">Вахтёр Новинка</td>
+              <td class="products__name products__name--new">Вахтёр <sup>Новинка</sup></td>
               <td>&lt; 1%</td>
               <td>35</td>
               <td>0,5 л</td>
               <td>150 Р.</td>
             </tr>
             <tr>
-              <td class="products__name products__name--new">Романтик Новинка</td>
+              <td class="products__name products__name--new">Романтик <sup>Новинка</sup></td>
               <td>&lt; 0,5%</td>
               <td>27</td>
               <td>0,5 л</td>
@@ -193,35 +197,41 @@
               <input class="order__input" type="text" name="fullname" id="fullname" placeholder="Как мы можем к вам обращаться?">
             </div>
             <div class="order__form-group">
-              <label class="order__label" for="phone">Номер телефона:</label>
-              <input class="order__input" type="text" name="phone" id="phone" placeholder="+7 (XXX) XXX-XX-XX">
-            </div>
-            <div class="order__form-group">
-              <label class="order__label" for="phone-extra">Доп. номер:</label>
-              <input class="order__input" type="text" name="phone-extra" id="phone-extra" placeholder="+7 (XXX) XXX-XX-XX">
+              <div class="order__form-group--short">
+                <label class="order__label order__label--short" for="phone">Номер телефона:</label>
+                <input class="order__input order__input--short" type="text" name="phone" id="phone" placeholder=" +7 (XXX) XXX-XX-XX">
+              </div>
+              <div class="order__form-group--short">
+                <label class="order__label order__label--short order__label--margin" for="phone-extra">Доп. номер:</label>
+                <input class="order__input order__input--short" type="text" name="phone-extra" id="phone-extra" placeholder=" +7 (XXX) XXX-XX-XX">
+              </div>
             </div>
             <div class="order__form-group">
               <label class="order__label" for="email">Email:</label>
               <input class="order__input" type="text" name="email" id="email" placeholder="Ваша электронная почта">
             </div>
-            <div class="order__form-group">
+            <div class="order__form-group order__form-group--select">
               <label class="order__label" for="order-size">Объем заказа:</label>
-              <select  class="order__select" name="order-size" id="order-size">
-                <option value="1">От 1 до 5 баррелей в неделю</option>
-                <option value="2" selected="2">От 5 до 10 баррелей в неделю</option>
+              <select  class="order__input order__input--select" name="order-size" id="order-size">
+                <option value="1" selected="1">От 5 до 10 баррелей в неделю</option>
+                <option value="2">От 1 до 5 баррелей в неделю</option>
                 <option value="3">От 10 до 15 баррелей в неделю</option>
               </select>
+              <div class="select-arrow"></div>
             </div>
             <div class="order__form-group">
               <label class="order__label" for="message">Доп. комментарий:</label>
-              <textarea class="order__textarea" name="message" id="message" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
+              <textarea class="order__input order__input--textarea" name="message" id="message" rows="5" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
             </div>
-            <div class="order__form-group">
-              <label class="order__label">
-                <input class="order__checkbox" type="checkbox" name="subscription"> Я согласен получать квасную рассылку
-              </label>
+            <div class="order__form-group order__form-group--checkbox">
+              <div class="order__label"></div>
+              <input class="order__checkbox" type="checkbox" name="subscription" id="subscription">
+              <label class="order__label order__label--checkbox" for="subscription">Я согласен получать квасную рассылку</label>
             </div>
-            <button class="order__button btn" type="submit">Отправить заказ</button>
+            <div class="order__form-group order__form-group--button">
+              <div class="order__label"></div>
+              <button class="order__button btn" type="submit">Отправить заказ</button>
+            </div>
           </form>
         </section>
 
@@ -237,10 +247,10 @@
 
           <nav class="main-nav main-nav--footer">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#">История</a></li>
-              <li class="main-nav__item"><a href="#">Производство</a></li>
-              <li class="main-nav__item"><a href="#">Ассортимент</a></li>
-              <li class="main-nav__item"><a href="#">Где купить</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"><span data-hover="История">История</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"><span data-hover="Производство">Производство</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"><span data-hover="Ассортимент">Ассортимент</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"><span data-hover="Где купить">Где купить</span></a></li>
             </ul>
           </nav>
 
@@ -251,13 +261,13 @@
           <div class="page-footer__social">
             <ul class="social-links">
               <li class="social-links__item">
-                <a class="social-link social-link--ig" href="#">Мы в Инстаграме</a>
+                <a class="social-link social-link--ig" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
               </li>
               <li class="social-links__item">
-                <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
+                <a class="social-link social-link--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
               </li>
               <li class="social-links__item">
-                <a class="social-link social-link--vk" href="#">Мы в Вконтакте</a>
+                <a class="social-link social-link--vk" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
               </li>
             </ul>
           </div>
@@ -265,7 +275,9 @@
           <div class="page-footer__copyright">
             <p>При перепечатке материалов ссылка на сайт обязательна!</p>
             <div class="copyright">
-              <a class="copyright__link social-link social-link--copyright" href="https://htmlacademy.ru"><img src="img/htmlacademy.png" width="27" height="34" alt="HTML Academy"></a>
+              <a class="copyright__link social-link social-link--copyright" href="https://htmlacademy.ru">
+                <img src="img/htmlacademy.png" width="27" height="34" alt="HTML Academy">
+              </a>
               <span class="copyright__desc">Разработчик: HTML Academy</span>
             </div>
           </div>
