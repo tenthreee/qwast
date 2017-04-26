@@ -11,7 +11,7 @@
 }
 
 .main-nav--footer {
-  
+
   .main-nav__list {
     border: none;
   }
@@ -41,7 +41,7 @@
   background-color: #1b1b1b;
 
   &:hover {
-    background-color: $main-color-dark;
+    background-color: $hover-color;
   }
 
   &::before {
