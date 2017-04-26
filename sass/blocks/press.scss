@@ -1,0 +1,58 @@
+.press {
+  @include block;
+  background-color: #ede5d8;
+}
+
+.press__title {
+  margin: 0;
+  padding-bottom: 90px;
+  @include title;
+}
+
+.press__review {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.press__text {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-right: 110px;
+  @include text;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 34px;
+    top: 10px;
+    left: -100px;
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    background-position: -5px -152px;
+  }
+}
+
+.press__name {
+  margin: 0;
+  align-self: baseline;
+  @include small-title;
+}
+
+.press__button {
+  align-self: baseline;
+  color: #aaa399;
+  box-shadow: inset 0 0 0 2px #aaa399;
+
+  &:hover {
+    color: black;
+    box-shadow: inset 0 0 0 2px black;
+  }
+
+  &:active {
+    @include btn-active;
+  }
+}

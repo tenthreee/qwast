@@ -1,0 +1,111 @@
+.new-items {
+  @include block;
+}
+
+.new-items__title {
+  margin: 0;
+  margin-bottom: 100px;
+  @include title;
+}
+
+.items-container {
+  display: flex;
+}
+
+.bottle-item {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  position: relative;
+  border-left: 1px solid $active-color;
+  border-right: 1px solid $active-color;
+  border-collapse: collapse;
+
+  &--left {
+    border-right: none;
+  }
+}
+
+.bottle-item__stats {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bottle-item__alc,
+.bottle-item__cal {
+  padding-top: 15px;
+  @include upper-text;
+  color: black;
+}
+
+.bottle-item__cal {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $active-color;
+}
+
+.bottle-item__ingredients {
+  padding-top: 15px;
+  @include body-text;
+}
+
+.bottle-item__img {
+  width: 319px;
+  height: 459px;
+}
+
+.bottle-item__title {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  @include title;
+}
+
+.bottle-item__desc {
+  margin: 0;
+  padding-bottom: 50px;
+  @include text;
+}
+
+.bottle-item__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottle-item__btn-more {
+  margin-right: 5px;
+  color: $main-color-dark;
+  box-shadow: inset 0 0 0 2px $main-color-dark;
+
+  &:hover {
+    @include btn-hover;
+    box-shadow: inset 0 0 0 2px $hover-color;
+  }
+  
+  &:active {
+    @include btn-active;
+  }
+}
+
+.bottle-item__btn-buy {
+  margin-right: 35px;
+  color: white;
+  background-color: $main-color-dark;
+  transition: transform 0.3s;
+
+  &:hover {
+    @include btn-hover;
+  }
+
+  &:active {
+    @include btn-active;
+  }
+}
+
+.bottle-item__price {
+  @include upper-text;
+  color: black;
+}

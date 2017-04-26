@@ -1,0 +1,65 @@
+.products {
+  @include block;
+}
+
+.products__title {
+  margin: 0;
+  padding-bottom: 90px;
+  @include title;
+}
+
+.products__table {
+  width: 100%;
+  @include upper-text;
+  font-weight: normal;
+  color: black;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid $active-color;
+  }
+
+  th {
+    padding-bottom: 40px;
+    font-size: 8px;
+    line-height: 15px;
+    font-weight: normal;
+    font-family: $font;
+    text-transform: uppercase;
+    text-align: left;
+    vertical-align: top;
+    color: gray;
+
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+
+  td {
+    padding: 20px 0;
+    text-align: left;
+
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+}
+
+.products__name {
+  font-weight: bold;
+
+  &--new {
+
+    sup {
+      padding: 3px 5px;
+      margin-left: 15px;
+      font-size: 8px;
+      line-height: normal;
+      font-weight: 400;
+      font-family: $font;
+      color: white;
+      background-color: black;
+      border-radius: 3px;
+    }
+  }
+}

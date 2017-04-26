@@ -1,0 +1,104 @@
+.page-header {
+  padding: 70px 200px;
+  color: white;
+  background: $main-color-dark url("../img/background.jpg") no-repeat center;
+  background-size: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-logo {
+  width: 140px;
+  height: 76px;
+
+  img {
+    width: 140px;
+    height: 76px;
+  }
+}
+
+.promo-slider {
+  position: relative;
+  margin: 120px auto 350px;
+  padding: 0 100px;
+}
+
+.promo-slider__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.promo-slider__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promo-slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.promo-slider__title {
+  margin: 0;
+  font-size: 54px;
+  line-height: 61px;
+  font-weight: bold;
+  font-family: $font;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 30px $main-color-dark;
+}
+
+.promo-slider__toggles {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  margin: 0 auto;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  transform: translate(-50%);
+}
+
+.promo-slider__toggle {
+  margin: 0 10px;
+  width: 7px;
+  height: 7px;
+  font-size: 0;
+  text-align: center;
+  color: white;
+  background-color: $active-color;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#promo-input-1:checked ~ .promo-slider__toggles label[for="promo-input-1"],
+#promo-input-2:checked ~ .promo-slider__toggles label[for="promo-input-2"],
+#promo-input-3:checked ~ .promo-slider__toggles label[for="promo-input-3"] {
+  background-color: white;
+}
+
+.promo-slider__item {
+  display: none;
+}
+
+#promo-input-1:checked ~ .promo-slider__list .promo-slider__item:nth-of-type(1) {
+    display: block;
+}
+
+#promo-input-2:checked ~ .promo-slider__list .promo-slider__item:nth-of-type(2) {
+    display: block;
+}
+
+#promo-input-3:checked ~ .promo-slider__list .promo-slider__item:nth-of-type(3) {
+    display: block;
+}

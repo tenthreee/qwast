@@ -1,0 +1,6 @@
+.btn {
+  @include upper-text;
+  padding: 15px 20px;
+  border: 1px solid $active-color;
+  cursor: pointer;
+}

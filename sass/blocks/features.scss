@@ -1,0 +1,67 @@
+.features {
+  color: black;
+  background-color: $main-color-light;
+}
+
+.features__list {
+  margin: 0;
+  padding: 100px;
+  display: flex;
+  list-style: none;
+}
+
+.features__item {
+  padding: 0 80px;
+  padding-top: 80px;
+  border-right: 1px solid black;
+  border-color: rgba(0, 0, 0, 0.1);
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.features__title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 30px;
+  @include small-title;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.features__title--cook::before {
+  width: 52px;
+  height: 70px;
+  background-position: -35px -5px;
+}
+
+.features__title--native::before {
+  width: 48px;
+  height: 67px;
+  background-position: -97px -5px;
+}
+
+.features__title--quality::before {
+  width: 65px;
+  height: 60px;
+  background-position: -97px -82px;
+}
+
+.features__desc {
+  margin: 0;
+  @include text;
+}
