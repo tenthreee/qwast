@@ -25,6 +25,6 @@
   },
   "scripts": {
     "build": "gulp build",
-    "start": "npm run build && run serve"
+    "start": "npm run build && gulp serve"
   }
 }
