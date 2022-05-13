@@ -1,3 +1,5 @@
-# qwast
-Учебный проект -Кваст- <br>
-БЭМ / SASS / Gulp
+# Qwast
+
+https://tenthreee.github.io/qwast/
+
+**HTML・BEM・SCSS・Flex・Gulp**
