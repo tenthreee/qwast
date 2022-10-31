@@ -81,12 +81,13 @@
   box-shadow: inset 0 0 0 2px $main-color-dark;
 
   &:hover {
-    @include btn-hover;
+    color: $hover-color;
     box-shadow: inset 0 0 0 2px $hover-color;
   }
-  
+
   &:active {
-    @include btn-active;
+    color: $active-color;
+    box-shadow: inset 0 0 0 2px $active-color;
   }
 }
 
@@ -97,11 +98,11 @@
   transition: transform 0.3s;
 
   &:hover {
-    @include btn-hover;
+    background-color: $hover-color;
   }
 
   &:active {
-    @include btn-active;
+    color: $active-color-text;
   }
 }
 
